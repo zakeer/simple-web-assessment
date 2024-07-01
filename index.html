@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-100 text-gray-800">
+    <header class="bg-white shadow">
+        <div class="container mx-auto px-4 py-6">
+            <h1 class="text-3xl text-blue-500 underline decoration-dashed font-bold text-center">SOFTWARE DEVELOPER</h1>
+            <h1 class="text-3xl underline decoration-dashed font-bold text-center">MY AUTHOR</h1>
+        </div>
+    </header>
+
+
+    <section class="container mx-auto px-4 py-8">
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+            <h2 class="text-2xl underline decoration-dashed font-semibold mb-4">About Me</h2>
+            <p>Hello! I'm SYED AFRIN. I'm a web developer with a passion for creating beautiful and functional websites.
+                I have experience with HTML, CSS, JavaScript, and various frameworks and libraries.</p>
+        </div>
+    </section>
+
+    <section class="container mx-auto px-4 py-8">
+        <h2 class="text-2xl underline decoration-dashed font-semibold mb-4">HOBBIES</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+                <li>Painting </li>
+                <li>Listing Music </li>
+                <li> Reading Books</li>
+            </div>
+    </section>
+
+    <section class="container mx-auto px-4 py-8">
+        <h2 class="text-2xl underline decoration-dashed font-semibold mb-4">Projects</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+                <h3 class="text-xl font-semibold mb-2">Project One</h3>
+                <p> PlayAt(sports booking mobile app/court booking).</p>
+            </div>
+
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+                <h3 class="text-xl font-semibold mb-2">Project Two</h3>
+                <p>Job Search Portal Development.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <main class="flex justify-center">
+        <img class="flex-4 h-auto w-1/3" src="./frontend developers.jpg" alt=" " />
+    </main>
+
+    <section class="container mx-auto px-4 py-8">
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+            <h2 id="title" class="text-2xl underline decoration-dashed font-semibold mb-4">FRONTEND DEVELOPER</h2>
+            <p id="frontend-description">
+                DESCRIPTION : A frontend developer is a type of software developer who specializes in creating
+                the visual and interactive aspects of websites and web applications.
+                They focus on what users see and interact with directly in their web browsers.
+                The basic languages for Front-End Development are HTML, CSS, and JavaScript.</p>
+
+        </div>
+    </section>
+
+    <footer class="flex justify-center">
+        <button id="ui_button" class="bg-blue-900 hover:bg-blue-900 text-white font-bold py-4 px-12 rounded">
+            click </button>
+
+    </footer>
+
+    <script>
+        let User = document.getElementById("ui_button");
+        console.log(User);
+        console.log(User.innerHTML);
+        User.addEventListener("click", function () {
+            if (User.innerText === "click") {
+                User.addEventListener('click', function () {
+                    document.querySelector("img").style.border = "4px solid purple";
+                    document.querySelector("body").style.background = "grey";
+                    document.getElementById("title").innerText = "Full-Stack Developer"
+                    document.getElementById("frontend-description").innerText = "Afrin"
+                    User.innerText = "Back"
+                })
+            }
+            if (User.innerText === "Back") {
+                User.addEventListener("click", function () {
+                    document.querySelector("body").style.background = "White";
+                    document.getElementById("title").innerText = "FRONTEND DEVELOPER"
+                    document.getElementById("frontend-description").innerText = "DESCRIPTION : A frontend developer is a type of software developer who specializes in creating the visual and interactive aspects of websites and web applications.They focus on what users see and interact with directly in their web browsers.The basic languages for Front-End Development are HTML, CSS, and JavaScript."
+                    User.innerText = "click"
+                })
+            }
+        });
+    </script>
+</body>
+
+</html>
