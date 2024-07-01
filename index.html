@@ -1,55 +1,80 @@
+ 
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body>
-    <header>
-        <h1 class="text-4xl text-center  font-bold "> SOFTWARE DEVELOPER</h1> 
-        <h2 class=" text-2xl text-center  font-bold underline decoration-dashed ">AFRIN SYED</h2>
-        <p class=" text-2xl p-8 pd-8">
-         Hello this is AFRIN SYED I am a software Developer 
-         now I am currectly working at Trangla Innovations as a Frontend Developer</p>
+<body class="bg-gray-100 text-gray-800">
+   
+    <header class="bg-white shadow">
+        <div class="container mx-auto px-4 py-6">
+            <h1 class="text-3xl text-blue-500 underline decoration-dashed font-bold text-center">SOFTWARE DEVELOPER</h1>
+            <h1 class="text-3xl underline decoration-dashed font-bold text-center">MY AUTHOR</h1>
+        </div>
+    </header>
 
-        <h1 class="text-2xl  text-center font-bold underline decoration-dashed ">PROJECTS</h1>
+   
+    <section class="container mx-auto px-4 py-8">
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+            <h2 class="text-2xl underline decoration-dashed font-semibold mb-4">About Me</h2>
+            <p>Hello! I'm SYED AFRIN. I'm a web developer with a passion for creating beautiful and functional websites. I have experience with HTML, CSS, JavaScript, and various frameworks and libraries.</p>
+        </div>
+    </section>
 
-        <ul class="p-8 text-2xl">
-           <li>PlayAt(sports booking mobile app/court booking)</li>
-           <li>Job Search Portal Development.</li>
-        </ul>
+    <section class="container mx-auto px-4 py-8">
+        <h2 class="text-2xl underline decoration-dashed font-semibold mb-4">HOBBIES</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
 
-       <main class="flex justify-center">
-        <img class="flex-4 h-auto w-1/3" src= "./frontend developers.jpg" alt=" " />
-      </main>
-
-     </header>
-           
-             <h1 class="text-2xl p-8 text-center font-bold underline decoration-dashed "> FRONTEND DEVELOPER</h1>
-             <div class="p-8">
-        <li class="text-2xl">
-             DESCRIPTION : A frontend developer is a type of software developer who specializes in creating 
-                           the visual and interactive aspects of websites and web applications.
-                          They focus on what users see and interact with directly in their web browsers.
-                          The basic languages for Front-End Development are HTML, CSS, and JavaScript.
-               </li>
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+                <li>Painting </li>
+                <li>Listing Music </li>
+                <li> Reading Books</li>
             </div>
+    </section>
 
-        <div class="p-8">
-          <h1 class="text-2xl text-center font-bold underline decoration-dashed ">HOBBIES</h1>
-               <ul class="text-2xl">
-                   <li>Reading Books</li>
-                   <li>Listing Music</li>
-                   <li>Painting</li>
-               </ul>
-         </div>
+    
+    <section class="container mx-auto px-4 py-8">
+        <h2 class="text-2xl underline decoration-dashed font-semibold mb-4">Projects</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+                <h3 class="text-xl font-semibold mb-2">Project One</h3>
+                <p> PlayAt(sports booking mobile app/court booking).</p>
+            </div>
+           
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+                <h3 class="text-xl font-semibold mb-2">Project Two</h3>
+                <p>Job Search Portal Development.</p>
+            </div>
+            
+        </div>
+    </section>
+
+    <main class="flex justify-center">
+        <img class="flex-4 h-auto w-1/3" src= "./frontend developers.jpg" alt=" " />
+    </main>
+
+    <section class="container mx-auto px-4 py-8">
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+            <h2 class="text-2xl underline decoration-dashed font-semibold mb-4">FRONTEND DEVELOPER</h2>
+            <p id="frontend-description"> 
+                DESCRIPTION : A frontend developer is a type of software developer who specializes in creating 
+            the visual and interactive aspects of websites and web applications.
+           They focus on what users see and interact with directly in their web browsers.
+           The basic languages for Front-End Development are HTML, CSS, and JavaScript.</p>
+                  
+        </div>
+    </section>
+
+
     <footer class="flex justify-center">
-        <button class= "bg-blue-900  hover:bg-blue-900 text-white font-bold py-4 px-12 rounded  "> click</button>
+        <button class= "bg-blue-900 hover:bg-blue-900 text-white font-bold py-4 px-12 rounded" > click</button>
+    
     </footer>
-          <script>
 
-
+    <script>
         let User = document.querySelector("button");
         console.log(User);
         console.log(User.innerHTML);
@@ -58,6 +83,6 @@
             document.querySelector("body").style.background = "grey";
         });
     </script>
-    
+
 </body>
 </html>
